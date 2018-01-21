@@ -1,38 +1,57 @@
 <html>
+<head>
+  <link rel="icon" href="media/icon.png"/>
+  <link rel="stylesheet" href="style.css"/>
+  <script type="text/javascript" src="JS/jquery.min.js"></script>
+  <script src="JS/external.js"></script>
+  <title>
+    Music Boxes
+  </title>
+</head>
 <body>
-<h1> Offical BMW Number 1 Fanpage Ireland</h1>
-<h1> BMW 1 Series 3-door,
-Starting from €31,020</h1>
-<img src="https://www.bmw.ie/content/dam/bmw/common/all-models/1-series/3-door/2017/navigation/BMW-1-Series-3-door_ModelCard.png">
-<h1> BMW 2 Series Coupé,
-Starting from €35,040</h1>
-<img src="https://www.bmw.ie/content/dam/bmw/common/all-models/2-series/coupe/2017/navigation/bmw-2-series-coupe-stage2-890x501.png">
-<h1> BMW 3 Series Saloon,
-Starting from €38,780</h1>
-<img src="https://www.bmw.ie/content/dam/bmw/common/all-models/3-series/sedan/2015/model-card/BMW-3-Series-Sedan_ModelCard.png">
-<h1> BMW 4 Series Coupé,
-Starting from €49,480</h1>
-<img src="https://www.bmw.ie/content/dam/bmw/common/all-models/4-series/coupe/2017/navigation/BMW-4-Series-Coupe-ModelCard.png">
-<h1> BMW 5 Series Saloon,
-Starting from €52,950</h1>
-<img src="https://www.bmw.ie/content/dam/bmw/common/all-models/5-series/sedan/2016/Model%20Card/bmw-modelfinder-g30-posi-stage2-890x501.png">
-<h1> BMW 6 Series Coupé,
-Starting from €99,880</h1>
-<img src="https://www.bmw.ie/content/dam/bmw/common/all-models/6-series/coupe/2014/model-card/BMW-6-Series-Coupe_ModelCard.png">
-<h1> BMW 7 Series Saloon,
-Starting from €90,920</h1>
-<img src="https://www.bmw.ie/content/dam/bmw/common/all-models/7-series/sedan/2015/model-card/BMW-7-Series-Sedan_ModelCard.png">
-<body style="background-color:1ad5e1;">
-<h1> BMW i8,
-Starting from €145,220</h1>
-<img src="https://www.bmw.ie/content/dam/bmw/common/all-models/i-series/i8/2014/model-card/BMW-i8_ModelCard.png">
-
-<a href="list.html">here is my list</a>
-
-
-
-
-
-
+  <audio id="cAudio">
+    <source src="media/c_note.mp3" type="audio/mpeg">
+    <source src="media/c_note.ogg" type="audio/ogg">
+    <source src="media/c_note.wav" type="audio/wav">
+  </audio>
+  <audio id="dAudio">
+    <source src="media/d_note.mp3" type="audio/mpeg">
+    <source src="media/d_note.ogg" type="audio/ogg">
+    <source src="media/d_note.wav" type="audio/wav">
+  </audio>
+  <audio id="eAudio">
+    <source src="media/e_note.mp3" type="audio/mpeg">
+    <source src="media/e_note.ogg" type="audio/ogg">
+    <source src="media/e_note.wav" type="audio/wav">
+  </audio>
+  <audio id="fAudio">
+    <source src="media/f_note.mp3" type="audio/mpeg">
+    <source src="media/f_note.ogg" type="audio/ogg">
+    <source src="media/f_note.wav" type="audio/wav">
+  </audio>
+  <audio id="gAudio">
+    <source src="media/g_note.mp3" type="audio/mpeg">
+    <source src="media/g_note.ogg" type="audio/ogg">
+    <source src="media/g_note.wav" type="audio/wav">
+  </audio>
+  <audio id="aAudio">
+    <source src="media/a_note.mp3" type="audio/mpeg">
+    <source src="media/a_note.ogg" type="audio/ogg">
+    <source src="media/a_note.wav" type="audio/wav">
+  </audio>
+  <audio id="bAudio">
+    <source src="media/b_note.mp3" type="audio/mpeg">
+    <source src="media/b_note.ogg" type="audio/ogg">
+    <source src="media/b_note.wav" type="audio/wav">
+  </audio>
+  <div id="instrument">
+    <div id="c" class="box" onmouseover="cmyFunction()"></div>
+    <div id="d" class="box" onmouseover="dmyFunction()"></div>
+    <div id="e" class="box" onmouseover="emyFunction()"></div>
+    <div id="f" class="box" onmouseover="fmyFunction()"></div>
+    <div id="g" class="box" onmouseover="gmyFunction()"></div>
+    <div id="a" class="box" onmouseover="amyFunction()"></div>
+    <div id="b" class="box" onmouseover="bmyFunction()"></div>
+  </div>
 </body>
 </html>
